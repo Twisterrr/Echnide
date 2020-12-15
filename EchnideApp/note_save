@@ -1,0 +1,3 @@
+appsettings.json
+    "DefaultConnection": "DataSource=app.db;Cache=Shared"
+server=YOURSERVER;user=YOURUSERID;password=YOURPASSWORD;database=YOURDATABASE
