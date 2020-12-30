@@ -7,48 +7,93 @@
     <title>@ViewData["Title"] - Echnide</title>
 
     <link rel="icon" href="~/picture/logo/favicon.png">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> 
-    <link rel="stylesheet" href="~/css/site.css" /> 
+    <link rel="stylesheet" href="~/css/layout.css" /> 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head> 
 
 <body> 
-    <header> 
+    <header>
+        <div class="wave wave-bar1"> </div>
+        <div class="wave wave-bar2"> </div>
+        <div class="wave wave-bar3"> </div>
+        <div class="wave wave-bar4"> </div>
         <nav id="nav-bar">
-            <input type="checkbox" id="check">
-            <label for="check" class="button">
-                <i class="fas fa-bars"></i>
-            </label>
             <div class="container-menu">
+                <input type="checkbox" id="check">
+                <label for="check" class="button">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <div class="theme-button">
+                </div>
                 <ul class="menu">
-                    <li class="cours">   Cours    </li>
-                    <li class="projet">  Projets  </li>
+                    <div class="button-navbar"> 
+                        <li class="cours">
+                            <span>C</span>
+                            <span>o</span>
+                            <span>u</span>
+                            <span>r</span>
+                            <span>s</span>
+                        </li>
+                    </div>
+                    <div class="button-navbar">
+                        <li class="projet">  
+                            <span>P</span>
+                            <span>r</span>
+                            <span>o</span>
+                            <span>j</span>
+                            <span>e</span>
+                            <span>t</span>
+                            <span>s</span>
+                        </li>
+                    </div>
+
                     <a class="temp" asp-area="" asp-controller="Home" asp-action="Index">
                         <img class="logo-black" src="~/picture/logo/logo_black.png">
                     </a>
-                    <li class="about">   About    </li>
-                    <li class="contact"> Contacts </li>
+                    <div class="button-navbar">
+                        <li class="about">
+                            <span>A</span>
+                            <span>B</span>
+                            <span>O</span>
+                            <span>U</span>
+                            <span>T</span>
+                        </li>
+                    </div>
+                    <div class="button-navbar">
+                        <li class="contact">
+                            <span>C</span>
+                            <span>O</span>
+                            <span>N</span>
+                            <span>T</span>
+                            <span>A</span>
+                            <span>C</span>
+                            <span>T</span>
+                        </li>
+                    </div>
                 </ul>
-                <img class="settings" src="~/picture/logo/logo_settings.png">
+                <div class="settings">
+                    <img class="logo-settings" src="~/picture/logo/logo_settings.png">
+                </div>
             </div>
         </nav> 
-
-            <div class="container"> 
-                <main role="main" class="pb-3"> 
-                    @RenderBody() 
-                </main> 
-            </div> 
+        <script src="~/js/navbar.js"></script>
     </header>
 
-    <footer class="border-top footer text-muted"> 
-        <div class="container"> 
-            &copy; 2020 - Echnide - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a> 
-        </div>
-    </footer>
+    <div class="container-body"> 
+        <main role="main" class="pb-3"> 
+            @RenderBody() 
+        </main> 
+    </div> 
+
 </body> 
-
-
+<footer class="border-top footer text-muted"> 
+    <div class="container"> 
+        &copy; 2020 - Echnide - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a> 
+    </div>
+</footer>
 
 <script src="~/lib/jquery/dist/jquery.min.js"></script> 
 <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script> 

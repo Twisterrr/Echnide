@@ -1,0 +1,319 @@
+﻿/*                   All Page                     */
+:root {
+  --dark-theme-body : #21243D; 
+  --dark-theme-navbar : #1D1F30; 
+}
+/*-------------------------------------------------*/
+
+
+/*                   All Page                     */
+*{
+  font-family: 'Nunito', sans-serif;
+  color: #c5a858;
+}
+
+html {
+  font-size: 14px;
+  position: relative;
+  min-height: 100%;
+}
+
+@media (min-width: 775px) {
+  html {
+    font-size: 16px;
+  }
+}
+/*-------------------------------------------------*/
+
+
+/*         Contain Nav / Body(for static nav)      */
+body {
+  --inv: #c5a858;
+  background-color: var(--dark-theme-body);
+}
+
+.container-body {
+  margin-top: 250px;
+}
+/*----------------  ---------------------------------*/
+
+/*        Contain : Logo / Menu / Settings         */
+#nav-bar {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-color: var(--dark-theme-navbar);
+  font-family: cursive;
+  z-index: 1;
+
+  padding: 10px 5%;
+}
+
+.wave {
+  position: fixed;
+  top: 19px;
+  display: block;
+  height: 113px;
+  width: 100%;
+  background: url(../picture/nav-bar/wave.png);
+  background-size: 1000px 113px;
+}
+
+.wave-bar1 {
+  animation: wave1 30s linear infinite;
+  z-index: 0;
+  opacity: 1;
+  animation-delay: 0s;
+  top: 83px;
+}
+.wave-bar2 {
+  animation: wave2 15s linear infinite;
+  z-index: -1;
+  opacity: 0.5;
+  animation-delay: -5s;
+  top: 81px;
+}
+.wave-bar3 {
+  animation: wave1 30 s linear infinite;
+  z-index: -2;
+  opacity: 0.2;
+  animation-delay: -2s;
+  top: 79px;
+}
+.wave-bar4 {
+  animation: wave2 30s linear infinite;
+  z-index: -3;
+  opacity: 0.7;
+  animation-delay: -5s;
+  top: 77px; 
+}
+
+@keyframes wave1 {
+  0%
+  {
+    background-position-x: 0;
+  }
+  100%
+  {
+    background-position-x: 1000px;
+  }
+}
+@keyframes wave2 {
+  0%
+  {
+    background-position-x: 0;
+  }
+  100%
+  {
+    background-position-x: -1000px;
+  }
+}
+/*--------------------------------------------------*/
+
+
+/*                         Menu                     */
+
+#nav-bar #check {
+  display: none;
+}
+
+#nav-bar .button {
+  display: none;
+}
+
+#nav-bar .container-menu .theme-button {
+  /* border: white;
+  border-style: solid;
+  border-width: 1px; */
+  height: 50px;
+  width: 50px;
+  display: block;
+}
+
+#nav-bar .container-menu {
+  /* border: white;
+  border-style: solid;
+  border-width: 1px; */
+  height: 80px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+#nav-bar .container-menu .menu {
+  /* border: white;
+  border-style: solid;
+  border-width: 1px; */
+
+  margin: 0;
+  padding: 0;
+  display: grid;  
+  grid-template-columns: repeat(5, auto);
+  text-align: center;
+  text-transform: uppercase;
+  width: 70%;
+}
+
+#nav-bar .container-menu .menu .logo-black {
+  width: 40px;
+}
+
+#nav-bar .container-menu .menu .button-navbar li {
+  padding-top: 2px;
+  list-style: none;
+  font-size: 18px;
+}
+
+li span {
+  margin: 0 -1px;
+}
+/*------------------Neon text -----------------------*/
+
+/*--------------------------------------------------*/
+.button-navbar span {
+  animation: neon 1.2s linear infinite;
+}
+
+.button-navbar span:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.button-navbar span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.button-navbar span:nth-child(3) {
+  animation-delay: 0.1s;
+}
+.button-navbar span:nth-child(4) {
+  animation-delay: 0s;
+}
+.button-navbar span:nth-child(5) {
+  animation-delay: 0.1s;
+}
+.button-navbar span:nth-child(6) {
+  animation-delay: 0.2s;
+}
+.button-navbar span:nth-child(7) {
+  animation-delay: 0.2s;
+}
+
+.button-navbar:hover span {
+  animation: neon 0.4s linear infinite;
+}
+
+.button-navbar:hover span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.button-navbar:hover span:nth-child(2) {
+  animation-delay: 0.05s;
+}
+
+.button-navbar:hover span:nth-child(3) {
+  animation-delay: 0.1s;
+}
+
+.button-navbar:hover span:nth-child(4) {
+  animation-delay: 0.15s;
+}
+
+.button-navbar:hover span:nth-child(5) {
+  animation-delay: 0.2s;
+}
+
+.button-navbar:hover span:nth-child(6) {
+  animation-delay: 0.25s;
+}
+
+.button-navbar:hover span:nth-child(7) {
+  animation-delay: 0.30s;
+}
+
+@keyframes neon { /* 1.2 s*/
+  0%,80%
+  {
+    text-shadow: none;
+  }
+  100%
+  {
+    text-shadow: 0 0  10px,
+                 0 0  20px,
+                 0 0  40px,
+                 0 0  80px;
+  }
+}
+/*--------------------------------------------------*/
+
+
+.button-navbar {
+  position: relative;
+  margin-top: 25px;
+  height: 50px;
+  cursor: pointer;
+  
+	color: var(--inv);
+	text-transform: uppercase;
+  transition: all 0.5s;
+}
+
+.button-navbar:before{
+  content: '';
+	position: absolute;	
+	transition: inherit;
+  z-index: -1;
+
+  top: -5px;
+  left: 50%;
+  height: 40px;
+  width: 0;
+  border: 1px solid var(--inv);
+  border-left: 0;
+  border-right: 0;
+}
+
+.button-navbar:after {
+	content: '';
+	position: absolute;	
+	transition: inherit;
+  z-index: -1;
+
+  bottom: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+}
+
+.button-navbar:hover:before {
+  left: 0;
+  width: 100%;
+}
+
+.button-navbar:hover:after {
+  width: 100%;
+}
+
+#nav-bar .container-menu .logo-settings {
+  width: 50px;
+}
+
+#nav-bar .container-menu .settings {
+  border: white;
+  border-style: solid;
+  border-width: 1px;
+  margin-bottom: 5px;
+  width: 50px;
+}
+ 
+
+/*-----------Condition Menu for mobile------------*/
+
+@media only screen and (max-width: 775px) {
+  
+}
+
+@media only screen and (max-width: 630px)
+{
+}
+/*-------------------------------------- ----------*/

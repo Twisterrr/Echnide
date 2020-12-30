@@ -7170,19 +7170,19 @@
     ]
   },
   "packageFolders": {
-    "/home/Ruby/.nuget/packages/": {}
+    "/home/ruby/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/Ruby/Documents/C#/Echnide/EchnideApp/EchnideApp.csproj",
+      "projectUniqueName": "/home/ruby/Documents/C#/Echnide/EchnideApp/EchnideApp.csproj",
       "projectName": "EchnideApp",
-      "projectPath": "/home/Ruby/Documents/C#/Echnide/EchnideApp/EchnideApp.csproj",
-      "packagesPath": "/home/Ruby/.nuget/packages/",
-      "outputPath": "/home/Ruby/Documents/C#/Echnide/EchnideApp/obj/",
+      "projectPath": "/home/ruby/Documents/C#/Echnide/EchnideApp/EchnideApp.csproj",
+      "packagesPath": "/home/ruby/.nuget/packages/",
+      "outputPath": "/home/ruby/Documents/C#/Echnide/EchnideApp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/Ruby/.nuget/NuGet/NuGet.Config"
+        "/home/ruby/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
